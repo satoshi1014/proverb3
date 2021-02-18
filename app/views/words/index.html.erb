@@ -1,0 +1,16 @@
+<div class="main">
+  <div class="main-content">
+     <div class="wide-content">
+      <div class="loop">
+        <div class="saying-list">
+          <ul class="clearfix">
+          <%= render partial: "proverb", collection: @proverbs %>
+          </ul>
+        </div>
+      </div>
+      
+          <%= paginate @proverbs %>
+      
+     </div>
+  </div>
+</div>
