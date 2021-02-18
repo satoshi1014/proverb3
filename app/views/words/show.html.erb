@@ -34,13 +34,13 @@
         名言
       </h2>
       <h2 class="show-area">
-        <%= @proverb.proverb %>
+        <%= safe_join(@proverb.proverb.split("\n"),tag(:br)) %>
       </h2>
       <h2 class="show-owner-area">
          <%= @proverb.owner %>
       </h2>
       <p class="show-story">
-        <%= @proverb.story%>
+        <%= safe_join(@proverb.story.split("\n"),tag(:br)) %>
       </p>
     </div>
 </div>
