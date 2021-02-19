@@ -6,4 +6,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :words, dependent: :destroy
   has_many  :comments
+  validates :username, presence: true
+  validates :image, presence: true
 end

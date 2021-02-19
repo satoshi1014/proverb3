@@ -226,3 +226,20 @@ label.checkbox-title {
     transition: 250ms background ease-in;
   }
 }
+div#error_explanation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div#error_explanation h2{
+    color: red;
+}
+div#error_explanation ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div#error_explanation ul li {
+    color: #100b0bd9;
+}

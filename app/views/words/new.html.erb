@@ -2,8 +2,8 @@
   <div class="wide-content-article">
     <article class="article">
       <div class="wpcf7">
-        <%= form_for(@proverb) do |f| %>
-          <div class="error-form">
+        <div class="error-form">
+          <%= form_for(@proverb) do |f| %>
             <% if @proverb.errors.any? %>
               <h3 class="error">
                 入力した内容にエラーが<%= @proverb.errors.count %>件あります
@@ -18,23 +18,23 @@
                 <% end %>
               </ul>
             <% end %>
-          </div>
-          <div class="place-space">
-            <%= f.label :proverb, "名言", {class: 'place-logo'} %>
-            <%= f.text_field :proverb,:placeholder => "例: ”海賊王”に!!!おれはなるっ!!!!", class: "place" %>
-          </div>
-          <div class="address-space">
-            <%= f.label :owner, "キャラ", {class: 'address-logo'} %>
-            <%= f.text_field :owner,:placeholder => "例:　モンキー・D・ルフィ", class: "address" %>
-          </div>
-          <div class="story-space">
-            <%= f.label :story, "ストーリーや感想など", {class: 'story-logo'} %>
-            <%= f.text_area :story, class: "story" %>
-          </div>
-          <div class="send">
-            <%= f.submit  "名言投稿", class: "send-buttom" %>
-          </div>
-        <% end %>
+            <div class="place-space">
+              <%= f.label :proverb, "名言", {class: 'place-logo'} %>
+              <%= f.text_field :proverb,:placeholder => "例: ”海賊王”に!!!おれはなるっ!!!!", class: "place" %>
+            </div>
+            <div class="address-space">
+              <%= f.label :owner, "キャラ", {class: 'address-logo'} %>
+              <%= f.text_field :owner,:placeholder => "例:　モンキー・D・ルフィ", class: "address" %>
+            </div>
+            <div class="story-space">
+              <%= f.label :story, "ストーリーや感想など", {class: 'story-logo'} %>
+              <%= f.text_area :story, class: "story" %>
+            </div>
+            <div class="send">
+              <%= f.submit  "名言投稿", class: "send-buttom" %>
+            </div>
+          <% end %>
+        </div>
       </div>
     </article>
   </div>
