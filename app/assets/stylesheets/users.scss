@@ -230,9 +230,13 @@ div#error_explanation {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 280px;
+    position: relative;
+    top: -200px;
 }
 div#error_explanation h2{
     color: red;
+    text-align: center;
 }
 div#error_explanation ul{
     display: flex;
